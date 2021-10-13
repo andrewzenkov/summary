@@ -13,3 +13,5 @@ The following query performs an inner join between the COUNTRIES table and the C
 The next query is similar to the one above, but it has the additional join condition that COUNTRIES.COUNTRY_ISO_CODE is equal to CITIES.COUNTRY_ISO_CODE:
 <br><br>
 ```SELECT * FROM COUNTRIES JOIN CITIES USING (COUNTRY, COUNTRY_ISO_CODE)```
+
+```psql -h localhost -p 5432 db_name -U user_name -f ./dump.sql```
