@@ -15,5 +15,5 @@ The next query is similar to the one above, but it has the additional join condi
 ```SELECT * FROM COUNTRIES JOIN CITIES USING (COUNTRY, COUNTRY_ISO_CODE)```
 
 
-## Run migration through psql
+### Run migration through psql
 ```psql -h localhost -p 5432 db_name -U user_name -f ./dump.sql```
