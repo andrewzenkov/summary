@@ -17,3 +17,6 @@ The next query is similar to the one above, but it has the additional join condi
 
 ### Run migration through psql
 ```psql -h localhost -p 5432 db_name -U user_name -f ./dump.sql```
+
+### Run dump through psql
+```pg_restore -U postgres -h localhost -p 5432 -d db_name -1 dump-2021101315```
