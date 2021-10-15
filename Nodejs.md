@@ -1,7 +1,7 @@
 
 ### Source root/path for nodejs project. The easist and fastest way.
 
-#### Typescript
+#### Typescript (in root file) index.js
 ``` 
 declare global {
     namespace NodeJS {
@@ -10,9 +10,11 @@ declare global {
         }
     }
 }
+
+global.__rootdir__ = __dirname || process.cwd();
 ``` 
 
-#### Nodejs
+#### Nodejs (in root file) index.js
 ``` 
 global.__rootdir__ = __dirname || process.cwd();
 ```
