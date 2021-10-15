@@ -1,5 +1,5 @@
 
-### Source root/path for nodejs project. The easist and fastest way.
+### Root path for nodejs project. The easist and fastest way.
 
 #### Typescript (in root file) index.js
 ``` 
